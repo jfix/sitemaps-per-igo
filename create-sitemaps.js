@@ -29,7 +29,7 @@ const infix = '-sitemap.xml'
 rl.on('line', (line) => {
   const [igo, alias] = line.split('\t')
   if (!config[igo]) {
-    // console.log(`*** FIXME ==> NO-IGO: ${line}`)
+    console.log(`*** FIXME ==> NO-IGO: ${line}`)
   } else {
     const prefix = config[igo].prefix
     const fileName = `${igo}${infix}`

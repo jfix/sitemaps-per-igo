@@ -10,7 +10,7 @@
     version="3.0">
     
     <xsl:output method="text"/>
-    <xsl:param name="in.dir" select="'/Users/jakob/Projects/ilibrarylive?select=*.xml;recurse=yes;on-error=warning'"/>
+    <xsl:param name="in.dir" select="'/Users/jakob/Projects/ilibrary?select=*.xml;recurse=yes;on-error=warning'"/>
     <xsl:param name="out.file" select="'out.txt'"/>
     
     <xsl:template match="/">
@@ -29,6 +29,6 @@
             <xsl:otherwise/>
         </xsl:choose>
     </xsl:template>
-    
+
     <xsl:template match="*" mode="extract"/>
 </xsl:stylesheet>
